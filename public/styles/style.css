@@ -65,6 +65,7 @@ ul {
     height: auto;
     padding: 0 10px !important;
     background: rgba(0, 0, 0, 0.7) !important;
+    z-index: 999;
 }
 .sticky #hd-phone {
     display: none;
@@ -124,7 +125,6 @@ ul {
 #header nav ul li a:hover::after {
     transform: scaleY(1);
 }
-
 #hd-phone {
     position: relative;
     overflow: hidden;
@@ -163,6 +163,32 @@ ul {
 }
 #hd-phone:hover a {
     color: #333;
+}
+
+
+/*----------------------------------------------- banner -----------------------------------------------------*/
+#banner {
+    position: relative;
+    line-height: 0;
+    z-index: 1;
+}
+#banner .row {
+    max-width: 100%;
+}
+#banner img[alt="banner"] {
+    width: 100%;
+    height: 432px;
+    object-fit: cover;
+}
+#banner h1 {
+    font-size: 50px;
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /*----------------------------------------------- content -----------------------------------------------------*/
