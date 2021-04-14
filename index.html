@@ -1,1 +1,130 @@
-"Hello World" 
+<html !DOCTYPE>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <title>Ian Mooreen De Guzman | Web Developer</title>
+        <link rel="stylesheet" href="public/styles/style.css">
+        <link rel="icon" href="public/images/favicon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Zen+Dots:wght@400&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="top">
+        <header>
+            <div id="header">
+                <div class="row">
+                    <div id="hd-logo">
+                        <a href="#top"><img src="public/images/logo.png" alt="header-logo"></a>
+                    </div>
+                    <div id="hd-menu">
+                        <nav>
+                            <a href="#" id="pull"><strong>MENU</strong></a>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="hd-phone">
+                        <a href="tel:0977-4875-549">09774875549</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="banner">
+            <div class="row">
+                <h1>An aspiring web developer. Trying her head in the gme.</h1>
+                <img src="public/images/banner.jpg" alt="banner">
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="cv">
+                <div class="row">
+                    <a href="public/pdf/resume.pdf" target="_blank" class="buttons">Download CV</a>
+                </div>
+            </div>
+
+            <div id="about">
+                <div class="row">
+                    <h2>About Me</h2>
+                    <p>"I've been working for two and a half year as a web developer/programmer."</p>
+                </div>
+            </div>
+
+            <div id="skills">
+                <div class="row">
+                    <h2>Skills</h2>
+                </div>
+            </div>
+
+            <div id="services">
+                <div class="row">
+                    <h2>Services</h2>
+                </div>
+            </div>
+
+            <div id="projects">
+                <div class="row">
+                    <h2>My Projects</h2>
+                    <div class="flex">
+                        <div id="recent">
+                            <ul>
+                                <li><a href="https://exams.technodreamcenter.com/ianmooren.deguzman/sfhunitedenterprises.com/"  target="_blank" title="Wordpress website development exam">SFH United Enterprises (Personal)</a></li>
+                                <li><a href="http://betasites.technodreamcenter.com/T/theredwooddebrisboxrentals.site/" target="_blank" title="static/responsive website development exam">The Red Wood Debris Box Rentals (Personal)</a></li>
+                            </ul>
+                        </div>
+                        <div id="old">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <div class="row">
+                    <h2>REACH ME OUT</h2>
+                    <div class="flex">
+                        <div class="phone">
+                            <h4>CALL ME AT</h4>
+                            <a href="tel:0977-4875-549">09774875549</a>
+                        </div>
+                        <div class="email">
+                            <h4>EMAIL ME AT</h4>
+                            <a href="mailto:deguzmanianmooreen@gmail.com">deguzmanianmooreen@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div id="footer">
+            <div class="row">
+                <p>Copyright © 2021. Web Design by Ian Mooreen B. De Guzman</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= 120) {
+                    $('#header').addClass('sticky');
+                } else {
+                    $('#header').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+</html>
